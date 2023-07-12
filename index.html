@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="https://www.pngall.com/wp-content/uploads/2/Upload-PNG-High-Quality-Image.png" alt="" srcset="">
+            <p>Browse file to upload</p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+
+                <div class="colomn width">
+                    <label for="width">width</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="colomn height">
+                    <label for="height">height</label>
+                    <input type="number" name="" id="">
+                </div>
+
+            </div>
+            <div class="row checkboxes">
+                <div class="colomn ratios">
+                    <input type="checkbox" name="" id="" checked>
+                    <label for="ratio">Lock Aspect ratio</label>
+                </div>
+                <div class="colomn quality">
+                    <input type="checkbox" name="" id="">
+                    <label for="quality">Reduce Quality</label>
+                </div>
+            </div>
+            <button class="download-btn">Download image</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

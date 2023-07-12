@@ -1,0 +1,127 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: poppins; */
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #927d;
+}
+.wrapper{
+    width: 450px;
+    border-radius: 9px;
+    background: #fff;
+    padding: 30px;
+    height: 288px;
+
+}
+.wrapper .upload-box{
+    height: 225px;
+    border: 2px dashed gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.upload-box p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+.wrapper .upload-box img{
+    width: 65%;
+    height: 81%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wrapper.active .upload-box{
+    border: none;
+}
+.wrapper.active .upload-box p{
+    display: none;
+}
+.wrapper.active .upload-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 5px;
+}
+.wrapper .content{
+    margin-top: 28px;
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper.active{
+    height: 537px;
+}
+.wrapper.active .content{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05 ease;
+
+}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+
+}
+.content .row .colomn{
+    width: calc(100%/2 - 15px);
+
+}
+.row .colomn label{
+    font-size: 1.2rem;
+
+}
+.sizes .colomn input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #aaa;
+    padding: 0 15px;font-size: 1.22rem;
+    margin-top: 7px;
+}
+.sizes .colomn label{
+    font-size: 1.2rem;  
+}
+.sizes .colomn input:focus{
+    border: 2px solid purple;
+    padding: 0 13px;
+}
+.content .checkboxes{
+    margin-top: 20px;
+}
+.checkboxes .colomn input{
+    width: 17px;
+    height: 17px;
+    accent-color: purple;
+    margin-right: 9px;
+}
+.checkboxes .colomn{
+    display: flex;
+    align-items: center;
+}
+.content .download-btn{
+    width: 100%;
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    color: #fff;
+    outline: none;
+    margin: 30px 0 10px;
+    background:#927d;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px solid grey;
+}
+.content .download-btn:hover{
+    text-transform: uppercase;
+    background: purple;
+
+}
